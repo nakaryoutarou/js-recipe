@@ -1,0 +1,8 @@
+#gitで保存してアップロードする方法
+
+
+```bash
+git add .
+git commit -m "コミット"
+git push oigin master
+```
