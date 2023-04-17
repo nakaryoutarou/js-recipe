@@ -1,10 +1,20 @@
-const genkiFunction = function(number) {
-    
-    for (let n = 1; n <= number; n++) {
-      if (n % 3 === 0) {
-        console.log(`${n}!!!!!!!`)
-      } else {
-        console.log(n)
-      }
-    }
-  }
+const figure = document.getElementById("figure")
+const squareButton = document.getElementById("square-button")
+const circleButton = document.getElementById("circle-button")
+const figurebutton = document.getElementById("figure-button")
+
+//figure.onclick = function () {
+//  figure.classList.toggle("rounded")
+//}
+circleButton.onclick = function() {
+  // figure に rounded クラスを追加する
+  figure.classList.add("rounded")
+}
+
+squareButton.onclick = function() {
+  // figure から rounded クラスを削除する
+  figure.classList.remove("rounded")
+}
+figurebutton.onclick = function () {
+  figure.classList.toggle("rounded")
+}
