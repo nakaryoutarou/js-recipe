@@ -1,7 +1,7 @@
 const figure = document.getElementById("figure")
 const squareButton = document.getElementById("square-button")
 const circleButton = document.getElementById("circle-button")
-const figurebutton = document.getElementById("figure-button")
+const figureButton = document.getElementById("figure-button")
 
 //figure.onclick = function () {
 //  figure.classList.toggle("rounded")
@@ -15,6 +15,6 @@ squareButton.onclick = function() {
   // figure から rounded クラスを削除する
   figure.classList.remove("rounded")
 }
-figurebutton.onclick = function () {
+figureButton.onclick = function () {
   figure.classList.toggle("rounded")
 }
