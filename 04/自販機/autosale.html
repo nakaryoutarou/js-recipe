@@ -21,6 +21,7 @@
     <section>
       <h3>商品を買う</h3>
       <button id="buy-button-tea">お茶(100円)</button>
+      <button id="oturi">おつり</button>
     </section>
     <section>
       <h3>買った商品</h3>
@@ -33,6 +34,7 @@
       const addbutton100 = document.getElementById("add-button-100")
       const displaysaifu = document.getElementById("display-saifu")
       const displayjihankimoney = document.getElementById("display-jihanki-money")
+      const oturi = document.getElementById("oturi")
 
       let saifu = displaysaifu.textContent
       let count = 0
@@ -58,6 +60,15 @@
                 displayjihankimoney.textContent = count
             }
         }
+
+        oturi.onclick = function(){
+            saifu += count
+            displaysaifu.textContent = saifu
+            count -= count
+            displayjihankimoney.textContent = count
+            
+        }
+
 
     </script>
   </body>

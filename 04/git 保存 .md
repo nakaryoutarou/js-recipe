@@ -4,5 +4,5 @@
 ```bash
 git add .
 git commit -m "コミット"
-git push oigin master
+git push origin master
 ```
