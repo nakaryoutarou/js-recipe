@@ -1,5 +1,5 @@
 const cardscontainer = document.getElementById("cards-container")
-const inputtodo = document.getElementById("input-todo")
+const inputElement = document.getElementById("input-todo")
 const addbutton = document.getElementById("add-button")
 
 addbutton.onclick = function(){
